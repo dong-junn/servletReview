@@ -3,9 +3,9 @@
 import java.util.HashMap;
 import java.util.Map;
 
-import com.servlet.second.user.JoinController;
-import com.servlet.second.user.LoginController;
-import com.servlet.second.user.LogoutController;
+import review.step2.controller.JoinController;
+import review.step2.controller.LoginController;
+import review.step2.controller.LogoutController;
 
 
 public class HandlerMapping {
@@ -13,8 +13,6 @@ public class HandlerMapping {
 
 	public HandlerMapping() {
 		mappings = new HashMap<String, Controller>();
-		
-		
 		
 		mappings.put("/login.do", new LoginController());
 		mappings.put("/logout.do", new LogoutController());	
