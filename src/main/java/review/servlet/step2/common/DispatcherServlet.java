@@ -34,6 +34,7 @@ public class DispatcherServlet extends HttpServlet {
 	}
 
 	private void process(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		System.out.println("getRequestURI: " + request.getRequestURI() );
 		String uri = request.getRequestURI(); //"/logout.do"
 		String path = uri.substring(uri.lastIndexOf("/")); //"/logout.do"
 
